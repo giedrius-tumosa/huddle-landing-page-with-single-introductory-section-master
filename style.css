@@ -112,7 +112,6 @@ body {
   max-width: 1440px;
   min-height: 800px;
   padding-inline: var(--padding-inline-desktop);
-  /* padding-block: var(--padding-block-desktop); */
 }
 
 /* Header */
@@ -157,7 +156,10 @@ body {
 /* || GENERAL STYLES */
 
 body {
+  background: url(./images/bg-desktop.svg);
   background-color: var(--clr-bg-body);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .footer__social-list img {
   filter: invert();
@@ -173,6 +175,10 @@ body {
 /* || MEDIA QUERIES */
 
 @media screen and (max-width: 900px) {
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    background-size: contain;
+  }
   .main {
     grid-template-columns: 90%;
     justify-content: center;
