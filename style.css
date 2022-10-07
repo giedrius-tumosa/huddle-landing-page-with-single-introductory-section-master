@@ -1,3 +1,7 @@
+html {
+  border: 1px solid red;
+}
+
 /* || RESET */
 
 *,
@@ -10,7 +14,7 @@
 }
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 img {
   display: block;
@@ -181,7 +185,7 @@ body {
     padding-block: 1rem;
   }
   .main {
-    grid-template-columns: 80%;
+    grid-template-columns: 100%;
     justify-content: center;
   }
   .container {
@@ -202,13 +206,11 @@ body {
   .footer__social-list {
     justify-content: center;
   }
-  .header__logo {
-    padding-bottom: 0rem;
+  .header {
+    display: grid;
+    place-content: center;
   }
-}
-
-@media screen and (max-width: 400px) {
-  .main {
-    grid-template-columns: 100%;
+  .header__logo {
+    padding-bottom: 1rem;
   }
 }
