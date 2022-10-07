@@ -162,7 +162,7 @@ body {
 body {
   background: url(./images/bg-desktop.svg);
   background-color: var(--clr-bg-body);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .footer__social-list img {
