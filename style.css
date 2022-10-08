@@ -9,7 +9,7 @@
 }
 html,
 body {
-  min-height: 100%;
+  min-height: 100vh;
 }
 img {
   display: block;
@@ -138,18 +138,18 @@ body {
 .description__paragraph {
   padding-bottom: 25px;
 }
-
-/* Footer */
-
-.footer {
-  padding-top: 2.5rem;
-}
 .register-button {
   width: 200px;
   height: 58px;
   border-radius: 29px;
   text-align: center;
   line-height: 58px;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 2.5rem;
 }
 
 /* || GENERAL STYLES */
@@ -160,8 +160,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.footer__social-list img {
+.footer__social-list svg {
   filter: invert();
+}
+.footer__social-list svg:active {
+  filter: none;
+  fill: var(--clr-primary-300);
 }
 .register-button {
   background-color: var(--clr-bg-button);
